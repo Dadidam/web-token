@@ -15,3 +15,7 @@ var token = jwt.compact();
 
 console.log("jwt:", jwt);
 console.log("token:", token);
+
+var decodeJwt = nJwt.verify("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImp0aSI6ImRlOTM2MmQ4LWRmMjYtNDZjMy04MTFjLWIxNzAxOTQwMzRlYiIsImlhdCI6MTUwOTM3NDc1NywiZXhwIjoxNTA5MzgwMzY1fQ.jmksn5qgBPWw-haztEkZwXKqKi6DVHdilUKEHCvr4Tw","secret", 'HS256');
+
+console.log("decodeJwt:", decodeJwt);
